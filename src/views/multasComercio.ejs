@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Multas Comercio</h1>
+    <table>
+        <tr>
+            <td>id</td>
+            <td>CUIT</td>
+            <td>Calle</td>
+            <td>DNI</td>
+            <td>Observaciones</td>
+            <td>Infracciones</td>
+        </tr>
+        <% obj.print.forEach(function(drink) {%>
+            <tr>
+                <td><%= drink.id %></td>
+                <td><%= drink.CUIT %></td>
+                <td><%= drink.Calle %></td>
+                <td><%= drink.DNI %></td>
+                <td><%= drink.Observaciones %></td>
+                <td><%= drink.Infracciones %></td>
+            </tr>
+        <% }); %>
+    </table>
+  </body>
+</html>
